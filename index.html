@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101218">
+  <meta name="description" content="Plan short-form videos with a simple AI video workflow demo. Connect a backend to enable real video generation.">
+  <title>ClipForge — Short-video studio demo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- AdSense: add your approved publisher script only after Google approves your site.
+       Never paste private API keys into this static frontend. -->
+</head>
+<body>
+  <div class="announcement">
+    <span class="pulse"></span>
+    <span><strong>Frontend demo</strong> · Real video generation is not connected yet.</span>
+    <a href="#how-it-works">How it works <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="ClipForge home">
+      <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5.5a2 2 0 0 1 3-1.7l17 10.2a2.3 2.3 0 0 1 0 4L10 28.2A2 2 0 0 1 7 26.5z" fill="currentColor"/><path d="M12 11.2v9.6l8-4.8z" fill="#11131a"/></svg></span>
+      <span>clipforge<span class="brand-dot">.</span></span>
+      <span class="demo-tag">DEMO</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#studio">Studio</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <a class="header-cta" href="#studio">Try the demo <span aria-hidden="true">↘</span></a>
+    <button class="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">✳</span> YOUR NEXT VIDEO STARTS HERE</div>
+        <h1>Turn a simple idea into a <span class="gradient-text">short-video plan.</span></h1>
+        <p class="hero-lede">Shape your idea, choose a format, and preview a production plan for your next Short, Reel, or TikTok. A clean starting point for a future MoneyPrinterTurbo-powered workflow.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#studio">Open video studio <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="trust-row">
+          <div class="avatar-stack" aria-hidden="true"><span>✦</span><span>▶</span><span>✳</span></div>
+          <p><strong>Made for creators</strong><br><span>Plan first. Connect generation later.</span></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a video editing timeline">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-chip chip-top"><span class="chip-icon">✦</span> Idea → story</div>
+        <div class="preview-card">
+          <div class="preview-top"><span class="live-dot"></span><span>YOUR NEXT SHORT</span><span class="preview-menu">•••</span></div>
+          <div class="video-visual">
+            <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+            <div class="visual-caption">MAKE IT<br><em>STICK.</em></div>
+            <div class="play-button"><span>▶</span></div>
+            <div class="visual-time">00:18 / 00:42</div>
+          </div>
+          <div class="timeline-label"><span>STORYBOARD</span><span>9:16 VERTICAL</span></div>
+          <div class="timeline">
+            <div class="timeline-clip clip-a"><span>01</span></div>
+            <div class="timeline-clip clip-b"><span>02</span></div>
+            <div class="timeline-clip clip-c"><span>03</span></div>
+            <div class="timeline-clip clip-d"><span>04</span></div>
+          </div>
+          <div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="float-chip chip-bottom"><span class="status-check">✓</span> Storyboard ready</div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✳</div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Workflow highlights">
+      <div><span class="stat-icon">✳</span><span><strong>Idea to outline</strong><small>Start with a topic</small></span></div>
+      <div><span class="stat-icon">▤</span><span><strong>Short-form first</strong><small>Vertical video formats</small></span></div>
+      <div><span class="stat-icon">◷</span><span><strong>Creator-friendly</strong><small>Simple workflow preview</small></span></div>
+      <div><span class="stat-icon">↗</span><span><strong>Backend-ready</strong><small>Connect your own service</small></span></div>
+    </section>
+
+    <section class="studio-section section-wrap" id="studio">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE CREATOR STUDIO</div>
+          <h2>What are we making <span class="gradient-text">today?</span></h2>
+          <p>Fill in the details to preview a sample production brief.</p>
+        </div>
+        <span class="demo-status"><span class="pulse"></span> Interactive demo</span>
+      </div>
+
+      <div class="studio-grid">
+        <form id="generator-form" class="generator-panel">
+          <div class="panel-heading"><span class="panel-number">01</span><div><h3>Set your direction</h3><p>A few details help shape your video.</p></div></div>
+          <label for="topic">What is your video about?</label>
+          <textarea id="topic" name="topic" rows="3" maxlength="500" placeholder="e.g. 5 surprising facts about the ocean..." required>5 surprising facts about the ocean</textarea>
+          <div class="field-row">
+            <div class="field-group">
+              <label for="platform">Platform</label>
+              <select id="platform" name="platform">
+                <option value="YouTube Shorts">YouTube Shorts</option>
+                <option value="Instagram Reels">Instagram Reels</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Facebook Reels">Facebook Reels</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="duration">Duration</label>
+              <select id="duration" name="duration">
+                <option value="30 seconds">30 seconds</option>
+                <option value="45 seconds" selected>45 seconds</option>
+                <option value="60 seconds">60 seconds</option>
+                <option value="90 seconds">90 seconds</option>
+              </select>
+            </div>
+          </div>
+          <label for="style">Visual direction</label>
+          <div class="style-options">
+            <label class="style-option selected"><input type="radio" name="style" value="Cinematic" checked><span class="style-swatch cinematic">◈</span><span>Cinematic</span></label>
+            <label class="style-option"><input type="radio" name="style" value="Clean and minimal"><span class="style-swatch minimal">◌</span><span>Minimal</span></label>
+            <label class="style-option"><input type="radio" name="style" value="Fast-paced"><span class="style-swatch fast">ϟ</span><span>Fast-paced</span></label>
+          </div>
+          <label for="voice">Narration style</label>
+          <select id="voice" name="voice">
+            <option value="Friendly and conversational">Friendly and conversational</option>
+            <option value="Energetic and punchy">Energetic and punchy</option>
+            <option value="Calm and informative">Calm and informative</option>
+            <option value="Dramatic storytelling">Dramatic storytelling</option>
+          </select>
+          <button class="button button-primary generate-button" type="submit"><span>✦</span> Preview my video plan <span aria-hidden="true">↗</span></button>
+          <p class="form-note"><span>ⓘ</span> Demo only: this creates a sample plan in your browser. No video is generated or uploaded.</p>
+        </form>
+
+        <div class="result-panel" aria-live="polite">
+          <div class="result-header"><div><span class="result-kicker">YOUR WORKSPACE</span><h3 id="result-title">Your video plan</h3></div><span class="draft-pill"><span class="draft-dot"></span> SAMPLE</span></div>
+          <div id="empty-state" class="empty-state">
+            <div class="empty-illustration"><div class="empty-frame"><span>▶</span><i></i><i></i><i></i></div><span class="empty-spark">✦</span></div>
+            <h4>Your next idea, mapped out.</h4>
+            <p>Complete the form and preview a sample storyboard with scenes, timing, and a production checklist.</p>
+          </div>
+          <div id="result-content" class="result-content" hidden>
+            <div class="result-summary"><div class="result-thumbnail"><span>▶</span><small>PREVIEW</small></div><div class="result-meta"><span id="result-platform">YOUTUBE SHORTS</span><h4 id="result-topic">5 surprising facts about the ocean</h4><p id="result-details">45 seconds · Cinematic</p></div></div>
+            <div class="result-section-title"><span>STORYBOARD OUTLINE</span><span id="scene-count">4 SCENES</span></div>
+            <div id="scene-list" class="scene-list"></div>
+            <div class="result-section-title checklist-title">PRODUCTION CHECKLIST <span>DEMO</span></div>
+            <div class="checklist"><div><span class="checkmark">✓</span> Topic and format selected</div><div><span class="checkmark">✓</span> Sample scene outline prepared</div><div><span class="pending-mark">○</span> Generate footage and voiceover <small>Backend required</small></div></div>
+            <button id="download-brief" class="button button-secondary download-button" type="button">↓ Download sample brief (.txt)</button>
+          </div>
+          <div class="result-footer"><span class="lock-icon">⌑</span> Runs locally in your browser · No account needed</div>
+        </div>
+      </div>
+      <div class="backend-notice"><span class="notice-icon">⚙</span><div><strong>Want real video generation?</strong><p>This demo needs a separately hosted Python backend connected to MoneyPrinterTurbo before it can generate and deliver actual videos.</p></div><a href="#how-it-works">See setup <span>↗</span></a></div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-it-works">
+      <div class="section-heading centered-heading"><div class="eyebrow">FROM DEMO TO REAL PRODUCT</div><h2>A simple path from idea to <span class="gradient-text">finished video.</span></h2><p>The interface is ready to explore. These are the next steps to make it production-ready.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-icon icon-purple">✎</div><span class="step-index">STEP 01</span><h3>Describe your idea</h3><p>Choose a topic, platform, duration, and creative direction for the video.</p></article>
+        <article class="step-card"><div class="step-icon icon-orange">◫</div><span class="step-index">STEP 02</span><h3>Connect the engine</h3><p>Deploy MoneyPrinterTurbo on a server and connect it through a secure API.</p></article>
+        <article class="step-card"><div class="step-icon icon-green">▶</div><span class="step-index">STEP 03</span><h3>Generate and export</h3><p>Show job progress and provide a secure link to the completed video.</p></article>
+      </div>
+    </section>
+
+    <section class="cta-section section-wrap">
+      <div class="cta-card"><div class="cta-glow"></div><div class="cta-copy"><span class="eyebrow">BUILT FOR THE NEXT BIG IDEA</span><h2>Make room for more <span>creating.</span></h2><p>Start with a plan. Add the generation engine when your backend is ready.</p><a href="#studio" class="button button-light">Try the interactive demo <span>↗</span></a></div><div class="cta-decoration" aria-hidden="true"><div class="cta-play">▶</div><div class="cta-ring ring-one"></div><div class="cta-ring ring-two"></div><span class="cta-star star-one">✦</span><span class="cta-star star-two">✳</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="./"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5.5a2 2 0 0 1 3-1.7l17 10.2a2.3 2.3 0 0 1 0 4L10 28.2A2 2 0 0 1 7 26.5z" fill="currentColor"/></svg></span><span>clipforge<span class="brand-dot">.</span></span></a>
+    <p class="footer-disclaimer">An independent frontend demo. Not affiliated with or endorsed by the MoneyPrinterTurbo maintainers or OpenAI.</p>
+    <div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener noreferrer">MoneyPrinterTurbo ↗</a></div>
+    <p class="copyright">© <span id="year"></span> ClipForge Demo. Replace this name and policy text before commercial launch.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
